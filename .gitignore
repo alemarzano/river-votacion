@@ -1,0 +1,8 @@
+node_modules
+sources
+docs/sass
+docs/templates
+docs/pages
+gulpfile.js
+package.json
+package-lock.json
