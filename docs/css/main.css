@@ -72,21 +72,49 @@
     background-color: #4d4d4d; }
     .btn-r:hover div, .btn-r:focus div {
       background-color: #262626; }
+  .btn-r.white {
+    background-color: whitesmoke; }
+    .btn-r.white p {
+      color: #262626; }
+    .btn-r.white div {
+      background-color: #4d4d4d; }
+      .btn-r.white div i {
+        color: white; }
 
 footer {
   text-align: center; }
   footer a {
     text-decoration: none;
     color: #4d4d4d; }
+    footer a:hover {
+      color: black; }
+  footer ul.redes a {
+    font-size: 1.25em; }
   footer .legales {
     background-color: #c2c2c2; }
-    footer .legales p, footer .legales a {
+    footer .legales p,
+    footer .legales a {
       font-size: .85em;
-      color: #4d4d4d; }
-    footer .legales a:first-of-type {
-      margin-right: 6px;
-      padding-right: 12px;
-      border-right: 1px solid #4d4d4d; }
+      color: #4d4d4d;
+      margin: 4px 0; }
+
+.dropdown-menu {
+  border-radius: 0;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.12); }
+
+.dropdown-item {
+  transition: .1s; }
+  .dropdown-item:hover {
+    background-color: #262626;
+    color: #dbdbdb; }
+
+@media screen and (min-width: 768px) {
+  footer .legales a:first-of-type {
+    margin-right: 6px;
+    padding-right: 12px;
+    border-right: 1px solid #4d4d4d; }
+  footer ul.navbar-nav {
+    width: 85%; } }
 
 body {
   font-family: "Merriweather Sans", sans-serif;
@@ -227,6 +255,9 @@ section {
     left: 0;
     right: 0;
     margin: auto; }
+  .tab-pane .flowics-viz {
+    max-height: 5486px;
+    overflow: hidden; }
 
 .ecommerce {
   background-image: url("../img/content/ecommerce.jpg");
@@ -244,16 +275,71 @@ section {
     margin-bottom: -120px;
     padding: 24px; }
     .ecommerce .float h4 {
-      margin-bottom: 24px; }
+      margin-bottom: 8px;
+      font-size: 1.25em; }
+  .ecommerce.sorteo {
+    padding: 112px 0;
+    margin-top: -148px;
+    margin-bottom: 96px; }
+    .ecommerce.sorteo .row {
+      position: relative;
+      max-width: 100%;
+      margin: auto; }
+    .ecommerce.sorteo .float {
+      padding-right: 8px;
+      padding-left: 8px;
+      position: absolute;
+      bottom: -96px;
+      left: 0;
+      right: 0; }
+
+.formulario .grilla {
+  margin-top: -112px !important; }
+  .formulario .grilla .accordion .card {
+    border-radius: 0; }
+  .formulario .grilla .accordion .card-header {
+    background-color: whitesmoke; }
+  .formulario .grilla .accordion button {
+    color: #4d4d4d;
+    border-radius: 0; }
+    .formulario .grilla .accordion button:focus {
+      box-shadow: 0 0 0 0.2rem rgba(160, 160, 160, 0.25); }
+  .formulario .grilla .accordion p {
+    font-size: .85em;
+    color: #999999; }
 
 @media screen and (min-width: 768px) {
   main {
     padding-top: 0; }
   section:first-of-type {
-    padding-top: 32px; } }
+    padding-top: 96px;
+    margin-top: 0; }
+  .kit p {
+    min-height: 47px; }
+  .ecommerce.sorteo {
+    margin-bottom: 60px; }
+    .ecommerce.sorteo .float {
+      bottom: -36px; }
+  .tab-pane .flowics-viz {
+    max-height: 3200px; } }
 
-@media screen and (min-width: 110px) {
+@media screen and (min-width: 1024px) {
+  .tab-pane .flowics-viz {
+    max-height: 2060px; } }
+
+@media screen and (min-width: 1110px) {
   .logo-t {
     max-width: 50%;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .ecommerce .sub {
+    max-width: 75%;
+    display: block; }
+  .ecommerce.sorteo {
+    padding-bottom: 72px; }
+    .ecommerce.sorteo .float {
+      bottom: -8px; }
+  .headers h3 {
+    font-size: 2.3em; }
+  .tab-pane .flowics-viz {
+    max-height: 3200px; } }
