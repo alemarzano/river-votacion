@@ -132,7 +132,10 @@ nav {
     font-family: "Merriweather Sans", sans-serif;
     font-weight: 500;
     color: #262626;
-    margin: 0 18px; }
+    margin: 0 18px;
+    transition: .3s; }
+    nav .navbar-nav .nav-item .nav-link:hover {
+      color: black; }
 
 main {
   padding-top: 84px; }
@@ -331,7 +334,11 @@ section {
   .logo-t {
     max-width: 50%;
     display: block;
-    margin: auto; }
+    margin: auto;
+    margin-top: -32px;
+    padding-bottom: 16px; }
+  .buttons .btn-r:last-of-type {
+    max-width: 41%; }
   .ecommerce .sub {
     max-width: 75%;
     display: block; }
