@@ -211,6 +211,11 @@ section {
 
 .headers p {
   color: #4d4d4d; }
+  .headers p a {
+    color: #c1011e;
+    text-decoration: underline; }
+    .headers p a:hover {
+      color: #e60000; }
 
 /** M E C A N I C A S **/
 .etapa {
@@ -254,7 +259,7 @@ section {
 
 .tab-pane {
   position: relative;
-  padding-top: 30px; }
+  padding: 16px 0; }
   .tab-pane .loader {
     position: absolute;
     top: 50%;
@@ -263,7 +268,7 @@ section {
     right: 0;
     margin: auto; }
   .tab-pane .flowics-viz {
-    max-height: 5486px;
+    max-height: 5900px;
     overflow: hidden; }
 
 .ecommerce {
@@ -327,8 +332,10 @@ section {
     margin-bottom: 60px; }
     .ecommerce.sorteo .float {
       bottom: -36px; }
-  .tab-pane .flowics-viz {
-    max-height: 3200px; } }
+  .tab-pane {
+    padding: 32px; }
+    .tab-pane .flowics-viz {
+      max-height: 3200px; } }
 
 @media screen and (min-width: 1024px) {
   .tab-pane .flowics-viz {
