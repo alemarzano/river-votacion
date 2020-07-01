@@ -176,6 +176,9 @@ section {
     letter-spacing: .5px;
     font-weight: 700; }
 
+.modal .modal-header, .modal .modal-footer {
+  border: none; }
+
 .box-flotante {
   margin: -96px 16px 0;
   box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.12);
